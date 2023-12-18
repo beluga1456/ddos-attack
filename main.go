@@ -10,7 +10,7 @@ var num int = 0
 
 func send_data(ip string, port string) {
 	a := ip + ":" + port
-	conn, err := net.Dial("udp", a)
+	conn, err := net.Dial("tcp", a)
 	if err != nil {
 		return
 	}
